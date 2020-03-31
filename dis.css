@@ -39,7 +39,22 @@
   font-weight: bold;
   text-transform: capitalize;
   text-decoration-style: double;
+  animation-name: header;
+  animation: header 4s infinite;
+
 }
+@keyframes header{
+
+from{color: red;}
+
+to{color: rgb(12, 12, 12);}
+
+}
+
+
+
+
+
 .head p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -59,7 +74,22 @@
   border: black double 1px;
   border-radius: 20px;
   background-color: darkturquoise;
+  animation-name: place;
+  animation: place 1s infinite;
+  
 }
+@keyframes place{
+
+from{background-color: rgb(252, 5, 87);}
+to{background-color: rgb(215, 252, 7);}
+
+
+}
+
+
+
+
+
 .place h5 {
   text-transform: uppercase;
   text-align: center;
