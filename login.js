@@ -1,12 +1,15 @@
 function formValidation() {
   var passid = document.registration.passid;
   var uname = document.registration.username;
-
   var uemail = document.registration.email;
-  if (passid_validation(passid, 7, 12)) {
+  var inputtxt =document.registration.phone;
+  if (passid_validation(passid, 8, 12)) {
     {
       if (allLetter(uname)) {
         if (ValidateEmail(uemail)) {
+          if (phonenumber(inputtxt)){
+
+          }
         }
       }
     }
@@ -43,4 +46,28 @@ function ValidateEmail(uemail) {
     uemail.focus();
     return false;
   }
+
 }
+
+  function phonenumber(inputtxt)
+  {
+    var phone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    if((inputtxt.value.match(phone)))
+          {
+        return true;
+          }
+        else
+          {
+          alert("message");
+          return false;
+          }
+  }
+
+
+
+
+
+
+
+
+  
